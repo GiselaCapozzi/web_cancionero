@@ -1,0 +1,27 @@
+.container-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: antiquewhite;
+}
+
+.container-nav ul {
+  display: flex;
+  padding: 9px 0;
+}
+
+.container-nav ul li {
+  list-style: none;
+}
+
+.container-nav ul li a {
+  text-decoration: none;
+  margin: 7px;
+  font-size: 17px;
+  color: #000;
+  font-weight: 700;
+}
+
+.container-nav ul li a:focus {
+  color: cornflowerblue;
+}
