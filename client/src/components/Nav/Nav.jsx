@@ -20,7 +20,7 @@ const Nav = () => {
         {
           usuario && usuario.email ?
             <>
-              <li><Link>Formulario</Link></li>
+              <li><Link to='/form_song'>Formulario</Link></li>
               <li><Link to='/' onClick={handleCerrarSesion}>Cerrar Sesión</Link></li>
             </> :
             <li><Link to='/login'>Inicio de Sesión</Link></li>
