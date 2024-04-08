@@ -1,0 +1,25 @@
+.container_song {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 34px;
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+  border: 3px solid #ccc;
+  background-color: #fff;
+  padding: 12px;
+}
+
+.song button {
+  margin-left: auto;
+  padding: 1px;
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-color: #fd7373;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #b1b1b1;
+}

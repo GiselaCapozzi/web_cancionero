@@ -5,7 +5,7 @@
   flex-direction: column;
   height: 70vh;
   width: auto;
-  margin-top: 34px;
+  margin-top: 150px;
 }
 
 /* .form {
@@ -33,11 +33,12 @@
   border-radius: 12px;
   border: none;
   background-color: rgb(226, 226, 226);
-  width: 100%;
+  max-width: 95%;
 }
 
 .form_song textarea {
   resize: none;
+  height: 400px;
 }
 
 input[type='submit'] {

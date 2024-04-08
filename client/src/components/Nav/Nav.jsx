@@ -16,7 +16,7 @@ const Nav = () => {
   return (
     <div className="container-nav">
       <ul>
-        <li><Link>Cancionero</Link></li>
+        <li><Link to='/song'>Cancionero</Link></li>
         {
           usuario && usuario.email ?
             <>
