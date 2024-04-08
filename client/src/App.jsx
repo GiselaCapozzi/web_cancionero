@@ -4,6 +4,7 @@ import './index.css';
 import Nav from './components/Nav/Nav';
 import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
+import FormSong from './components/FormSong/FormSong';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path='/login' element={<Login />}/>
+        <Route path='/form_song' element={<FormSong />}/>
       </Routes>
     </BrowserRouter>
   )
