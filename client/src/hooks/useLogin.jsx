@@ -9,8 +9,6 @@ const useLogin = () => {
     password: ''
   });
 
-  console.log(usuario)
-
   const navigate = useNavigate();
 
   const obtenerUsuario = ({ target: { name, value } }) => {

@@ -3,7 +3,7 @@ export const getAllSongs = async (req, res) => {
 
   try {
     const [rows] = await connection.query(`
-      SELECT songs.titulo, songs.letra 
+      SELECT songs.id, songs.titulo, songs.letra 
       FROM songs
     `);
 
