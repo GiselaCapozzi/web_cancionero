@@ -11,11 +11,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const db = createPool({
-  host: DB_HOST,
-  user: USER,
-  password: PASSWORD,
-  database: DATABASE,
-  port: DB_PORT,
+  host: 'localhost',
+  user: 'root',
+  password: 'Far8519ganjulio06%',
+  database: 'cancionerodb',
+  port: 3306,
   connectionLimit: 10
 });
 
