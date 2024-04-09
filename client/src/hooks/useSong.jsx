@@ -6,7 +6,7 @@ const useSong = () => {
   const [canciones, setCanciones] = useState([]);
 
   const getSongs = async () => {
-    await fetch('http://localhost:8081/songs')
+    await fetch('https://web-cancionero.vercel.app/songs')
       .then(res => res.json())
       .then(data => setCanciones(data))
   }
@@ -36,7 +36,7 @@ const useSong = () => {
       })
 
       if (result.isConfirmed) {
-        const response = await fetch(`http://localhost:8081/songs/${id}`, {
+        const response = await fetch(`'https://web-cancionero.vercel.app/songs/${id}`, {
           method: 'DELETE'
         });
         if (response.ok) {
