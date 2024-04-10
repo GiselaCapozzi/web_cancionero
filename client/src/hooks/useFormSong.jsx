@@ -9,7 +9,7 @@ const useFormSong = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch('https://web-cancionero.vercel.app/songs', {
+    fetch('https://web-cancionero-zeta.vercel.app/songs', {
       method: 'POST',
       body: JSON.stringify(infoSong),
       headers: {

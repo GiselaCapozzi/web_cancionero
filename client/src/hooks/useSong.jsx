@@ -6,10 +6,17 @@ const useSong = () => {
   const [canciones, setCanciones] = useState([]);
 
   const getSongs = async () => {
-    await fetch('https://web-cancionero.vercel.app/songs')
-      .then(res => res.json())
-      .then(data => setCanciones(data))
+    try {
+      await fetch('https://web-cancionero-zeta.vercel.app/songs')
+        .then(res => res.json())
+        .then(data => setCanciones(data))
+        .catch(err => console.log(err))
+    } catch (error) {
+      console.log('Error al obtener los libros')
+    }
   }
+
+  console.log(canciones)
 
   useEffect(() => {
     getSongs()
@@ -36,10 +43,10 @@ const useSong = () => {
       })
 
       if (result.isConfirmed) {
-        const response = await fetch(`https://web-cancionero.vercel.app/songs/${id}`, {
+        const response = await fetch(`https://web-cancionero-zeta.vercel.app/songs/${id}`, {
           method: 'DELETE'
         });
-  
+
         if (response.ok) {
           await getSongs(); // Actualiza la lista de canciones después de borrar
           Swal.fire({
