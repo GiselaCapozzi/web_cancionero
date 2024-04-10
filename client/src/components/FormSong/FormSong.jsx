@@ -4,7 +4,7 @@ import './FormSong.css';
 
 const FormSong = () => {
 
-  const { handleForm, handleSubmit } = useFormSong();
+  const { handleForm, handleSubmit, error } = useFormSong();
 
   return (
     <>
@@ -28,6 +28,7 @@ const FormSong = () => {
               onChange={handleForm}
             ></textarea>
           </div>
+          <p>{error}</p>
           <input type="submit" value='Ingresar' />
         </div>
       </form>

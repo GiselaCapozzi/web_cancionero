@@ -11,6 +11,16 @@
   border: 3px solid #ccc;
   background-color: #fff;
   padding: 12px;
+  text-align: center;
+}
+
+.song h4 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.song p {
+  margin: 9px;
 }
 
 .song button {
@@ -22,4 +32,14 @@
   background-color: #fd7373;
   border-radius: 3px;
   box-shadow: 2px 2px 2px #b1b1b1;
+}
+
+.fecha, .sin_canciones {
+  text-align: center;
+  margin: 7px 0;
+}
+
+.sin_canciones {
+  color: #f85858;
+  font-weight: 500;
 }
