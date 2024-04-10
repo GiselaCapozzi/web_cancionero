@@ -19,7 +19,7 @@ app.use(morgan('dev'));
 
 app.use(cors({
   'methods': ['GET','POST', 'PUT', 'DELETE'],
-  'origin': ['https://cancionero-lapaz.netlify.app/']
+  'origin': ['https://cancionero-lapaz.netlify.app/', 'http://localhost:5173']
 }));
 
 app.use('/songs', SongsRoutes);
