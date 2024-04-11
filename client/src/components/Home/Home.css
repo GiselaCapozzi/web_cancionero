@@ -1,0 +1,19 @@
+.container-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.lapaz {
+  width: 60%;
+  height: auto;
+}
+
+.container-imagen .titulo {
+  margin-top: 12px;
+  color: #000;
+  font-size: 30px;
+  text-transform: uppercase;
+}

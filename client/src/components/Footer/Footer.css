@@ -1,0 +1,10 @@
+.container-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 93%;
+  height: 50px;
+  background-color: #f8f9fa; /* Cambia el color de fondo según tu diseño */
+  padding: 10px; /* Añade un espacio entre el contenido y el borde */
+  text-align: center; /* Centra el texto horizontalmente */
+}
