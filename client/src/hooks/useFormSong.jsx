@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 const useFormSong = () => {
 
@@ -22,6 +23,10 @@ const useFormSong = () => {
       headers: {
         'Content-Type': 'application/json'
       }
+    })
+    Swal.fire({
+      title: 'Canción agregada',
+      icon: 'success'
     })
     } catch (error) {
       console.log('Error al enviar los datos:', error);

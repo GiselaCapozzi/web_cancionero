@@ -16,15 +16,13 @@ const useSong = () => {
     }
   }
 
-  console.log(canciones)
-
   useEffect(() => {
     getSongs()
   }, []);
 
   const fecha = new Date();
   const dia = fecha.getDate();
-  const mes = fecha.getMonth();
+  const mes = fecha.getMonth() < 10 ? `0${fecha.getMonth() + 1}` : `${fecha.getMonth() + 1}`;
   const anio = fecha.getFullYear();
   const fechaCompleta = `${dia}/${mes}/${anio}`;
 

@@ -2,9 +2,31 @@
   position: relative;
   bottom: 0;
   left: 0;
-  width: 93%;
-  height: 50px;
-  background-color: #f8f9fa; /* Cambia el color de fondo según tu diseño */
-  padding: 10px; /* Añade un espacio entre el contenido y el borde */
-  text-align: center; /* Centra el texto horizontalmente */
+  width: auto;
+  height: 82px;
+  background-color: #fdf1e2;
+  padding: 10px;
+  text-align: center;
+}
+
+.icono {
+  font-size: 25px;
+  transition: .5s filter ease-in-out;
+}
+
+.icono:hover {
+  filter: opacity(60%);
+}
+
+.copyright {
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }

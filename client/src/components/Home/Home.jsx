@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="container-imagen">
       <img className="lapaz" src={ntraSraLaPaz} alt="" />
-      <h3 className="titulo">Cancionero</h3>
+      <h3 className="titulo">Cancionero virtual</h3>
     </div>
   )
 }

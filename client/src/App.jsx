@@ -16,12 +16,12 @@ function App() {
       <Header />
       <Nav />
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/login' element={<Login />}/>
-        <Route path='/form_song' element={<FormSong />}/>
-        <Route path='/song' element={<Song/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/form_song' element={<FormSong />} />
+        <Route path='/song' element={<Song />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   )
 }

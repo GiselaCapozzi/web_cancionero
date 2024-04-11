@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 90vh;
+  height: auto;
   width: auto;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 
 .form p {

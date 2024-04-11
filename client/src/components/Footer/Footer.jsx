@@ -1,12 +1,25 @@
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptop } from '@fortawesome/free-solid-svg-icons';
+import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 
 import './Footer.css';
 
 const Footer = () => {
   return (
     <div className="container-footer">
-      <FontAwesomeIcon icon={faLaptop} />
+      <div className='footer'>
+        <Link 
+          to='https://www.facebook.com/PdelapazWilde' 
+          target='_blank'
+        >
+          <FontAwesomeIcon
+            icon={faSquareFacebook}
+            color='blue'
+            className='icono'
+          />
+        </Link>
+        <p className='copyright'>© Copyright 2024 por GiselaCapozzi</p>
+      </div>
     </div>
   )
 }
